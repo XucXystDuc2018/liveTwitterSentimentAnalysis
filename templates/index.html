@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tweet Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Tweet Sentiment Analysis</h1>
+    <form action="/results" method="post">
+        <label for="username">Twitter Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="num_tweets">Number of Tweets:</label>
+        <input type="number" id="num_tweets" name="num_tweets" required>
+        <br><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>
